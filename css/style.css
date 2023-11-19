@@ -139,10 +139,10 @@ nav .links ul li:hover a {
   padding-left: 25px;
 }
 nav .links ul li:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 128, 0, 0.205);
+  border-bottom: 1px solid var(--minColor);
 }
 header {
-  background-image: url(../images/mountainn.jpg);
+  background-image: url(../images/mountainn.webp);
   height: calc(100vh - 64px);
   background-size: cover;
   position: relative;
@@ -245,6 +245,9 @@ header .intero-text p {
   .services .services-content .srv {
     flex-direction: column;
     text-align: center;
+  }
+  .services .services-content .image {
+    display: none;
   }
 }
 .services .services-content .image {
