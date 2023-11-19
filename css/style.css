@@ -139,7 +139,7 @@ nav .links ul li:hover a {
   padding-left: 25px;
 }
 nav .links ul li:not(:last-child) {
-  border-bottom: 1px solid var(--minColor);
+  border-bottom: 1px solid #9b99999a;
 }
 header {
   background-image: url(../images/mountainn.webp);
