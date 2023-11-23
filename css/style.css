@@ -9,10 +9,15 @@
   padding: 0;
   margin: 0;
 }
+::selection {
+  color: var(--minBackground-color);
+  background-color: var(--minColor);
+}
 :root {
   --minColor: #eee;
   --minBackground-color: rgb(0, 0, 0);
   --minPadding: 60px;
+  --secondry-color: #eeeeee88;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -71,7 +76,7 @@ nav {
   bottom: ; */
 }
 nav:hover {
-  border-bottom: 1px solid #eeeeee46;
+  border-bottom: 1px solid var(--secondry-color);
 }
 nav .container {
   display: flex;
@@ -120,10 +125,12 @@ nav .links ul {
     padding: 0;
     top: calc(100% + 20px);
     right: 0;
-    background-color:rgb(36, 34, 34);
+    background-color: #5f5e5e;
     min-width: 120px;
     display: none;
-    z-index: 1;
+    z-index: 9999;
+}
+img:hover {
 }
 nav .links:hover ul {
   display: block;
@@ -148,7 +155,7 @@ nav .links ul li:hover a {
   padding-left: 25px;
 }
 nav .links ul li:not(:last-child) {
-  border-bottom: 1px solid #9b99999a;
+  border-bottom: 1px solid var(--secondry-color);
 }
 header {
   background-image: url(../images/mountainn.jpg);
@@ -225,7 +232,7 @@ header .intero-text p {
 }
 .services .services-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   margin-top: 100px;
   gap: 50px;
   color: #fff;
@@ -439,7 +446,21 @@ display: none;
     font-size: 25px;
   } 
 }
-/* start contact */
+/* end contact */
+/* start footer */
+.footer {
+background-color: #5f5e5e;
+font-size: 18px;
+align-items: center;
+padding: 30px 10px;
+text-align: center;
+color:#c9c3c3;
+}
+.footer span {
+  font-weight: bold;
+  color: var(--minBackground-color);
+}
+/* start footer */
 
 /* 
 .test {
