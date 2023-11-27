@@ -1,0 +1,55 @@
+.services {
+    padding-top: var(--minPadding);
+    padding-bottom: var(--minPadding);
+    border-top: var(--border-color) solid 1px;
+  }
+  .services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+    margin-top: 100px;
+    gap: 50px;
+    color: #fff;
+  }
+  @media only screen and (max-width: 767px) {
+    .services .services-content {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  .services .services-content .srv .text {
+    flex: 1;
+  }
+  .services .services-content .srv {
+    margin-bottom: 40px;
+    display: flex;
+  }
+  .services .services-content .srv i {
+    flex-basis: 60px;
+  }
+  .services .services-content .srv h3 {
+    margin: 0 0 20px;
+    color: var(--min-color-heading);
+  }
+  .services .services-content .srv p {
+    color: #f0f0f0;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  @media only screen and (max-width: 767px) {
+    .services .services-content .srv {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .services .services-content .image {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  @media only screen and (max-width: 1024px) {
+    .services .services-content .image {
+      display: none;
+    }
+  }
+  .services .services-content .image img {
+    box-shadow: 0 0 10px var(--minColor);
+  }

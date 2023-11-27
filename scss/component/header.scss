@@ -1,0 +1,8 @@
+@import 'navbar';
+@import 'banner';
+header {
+    background-image: url(../images/header.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
