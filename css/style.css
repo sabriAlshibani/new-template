@@ -61,7 +61,7 @@ nav .links ul {
   padding: 0;
   top: calc(100% + 22px);
   right: -30px;
-  background-color: var(--secondry-color);
+  background-image: linear-gradient(#03070a, #041622);
   min-width: 120px;
   display: none;
   z-index: 9999;
@@ -101,7 +101,6 @@ nav .links ul li:not(:last-child) {
   position: absolute;
   top: 30%;
   left: 50%;
-  width: 500px;
   text-align: center;
   transform: translate(-50%, -50%);
 }
@@ -123,8 +122,8 @@ nav .links ul li:not(:last-child) {
   line-height: 1.7;
   font-weight: 300;
   color: #ccc;
-  width: 350px;
   margin: auto;
+  width: 300px;
 }
 @media only screen and (max-width: 767px) {
   .banner {
@@ -179,7 +178,7 @@ header {
 .services .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-  margin-top: 100px;
+  margin-top: 40px;
   gap: 50px;
   color: #fff;
 }
@@ -203,7 +202,7 @@ header {
 }
 
 .services .services-content .srv h3 {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   color: var(--min-color-heading);
 }
 
@@ -436,6 +435,7 @@ img {
   padding: 10px 0;
   text-align: center;
   color: #c9c3c3;
+  padding: 10px 0;
   border-top: var(--border-color) solid 1px;
 }
 
@@ -447,30 +447,30 @@ img {
 :root {
   --minColor: #eee;
   --minBackground-color: rgb(0, 0, 0);
-  --minPadding: 40px;
+  --minPadding: 60px;
   --secondry-color: #eeeeee88;
   --min-color-heading: #eee;
   --icon-color: rgb(255, 69, 193);
   --border-color: hsla(0, 1%, 26%, 0.404);
   --des-color: #797f91;
-  --min-background: linear-gradient(
+  --min-background:
     to bottom,
-    #051723,#d40808 #2F364C);
+    linear-gradient(#03070a, #041622);
   --min-background-image: linear-gradient(#f08192, #2c38a3);
 }
 
 :root {
   --minColor: #eee;
   --minBackground-color: rgb(0, 0, 0);
-  --minPadding: 40px;
+  --minPadding: 60px;
   --secondry-color: #eeeeee88;
   --min-color-heading: #eee;
   --icon-color: rgb(255, 69, 193);
   --border-color: hsla(0, 1%, 26%, 0.404);
   --des-color: #797f91;
-  --min-background: linear-gradient(
+  --min-background:
     to bottom,
-    #051723,#d40808 #2F364C);
+    linear-gradient(#03070a, #041622);
   --min-background-image: linear-gradient(#f08192, #2c38a3);
 }
 
@@ -486,6 +486,12 @@ body {
   background-image: linear-gradient(#03070a, #041622);
 }
 
+@media (max-width: 767px) {
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .section-heading {
   font-size: 80px;
   font-weight: bold;
@@ -534,6 +540,14 @@ body {
 ::selection {
   color: var(--minBackground-color);
   background-color: var(--minColor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

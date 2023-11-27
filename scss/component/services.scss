@@ -6,7 +6,7 @@
   .services .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    margin-top: 100px;
+    margin-top: 40px;
     gap: 50px;
     color: #fff;
   }
@@ -26,7 +26,7 @@
     flex-basis: 60px;
   }
   .services .services-content .srv h3 {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     color: var(--min-color-heading);
   }
   .services .services-content .srv p {

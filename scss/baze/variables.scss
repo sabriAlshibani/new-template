@@ -1,14 +1,14 @@
 :root {
     --minColor: #eee;
     --minBackground-color: rgb(0, 0, 0);
-    --minPadding: 40px;
+    --minPadding: 60px;
     --secondry-color: #eeeeee88;
     --min-color-heading: #eee;
     --icon-color: rgb(255, 69, 193);
     --border-color: hsla(0, 1%, 26%, 0.404);
     --des-color: #797f91;
-    --min-background: linear-gradient(
+    --min-background:
       to bottom,
-      #051723,#d40808 #2F364C);
+      linear-gradient(#03070a, #041622);
       --min-background-image: linear-gradient(#f08192, #2c38a3);
   }
