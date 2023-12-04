@@ -9,6 +9,9 @@
     margin-top: 40px;
     gap: 50px;
     color: #fff;
+    @media (max-width: 767px) {
+      gap: 20px;
+    }
   }
   @media only screen and (max-width: 767px) {
     .services .services-content {

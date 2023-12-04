@@ -9,6 +9,9 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   margin-top: 30px;
+    @media (max-width: 767px) {
+    gap: 50px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .photos .photos-content {
@@ -60,13 +63,15 @@ img {
   text-align: center;
   margin-top: 20px;
   color: #5f5e5e;
+  @media (max-width: 767px) {
+    margin: 20px 0;
+  }
 }
 .photos .photos-content .card .info h3 {
-  margin: 10px;
   font-weight: 700;
   color: var(--min-color-heading);
 }
 .photos .photos-content .card .info p {
   color: var(--des-color);
-  margin: 0;
+padding-top: 10px;
 }

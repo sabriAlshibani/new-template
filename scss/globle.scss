@@ -9,10 +9,13 @@ body {
   background-image: linear-gradient(#03070a, #041622);
 }
 @media (max-width: 767px) {
-  section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
+  .services,
+  .photos,
+  .contact,
+  .about,
+  .feature {
+padding-top: var(--phon-padding);
+padding-bottom: var(--phon-padding);
   }
 }
 .section-heading {

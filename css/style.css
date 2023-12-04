@@ -16,6 +16,11 @@ nav .logo {
   font-weight: 800;
   text-transform: uppercase;
 }
+nav .logo::first-letter {
+  color: #041622;
+  font-size: 30px;
+  margin-top: 5px;
+}
 
 nav .links {
   position: relative;
@@ -46,7 +51,8 @@ nav .links .icon span:nth-child(2) {
 
 nav .links:hover .icon span:nth-child(2) {
   width: 100%;
-  transition: 0.5s;
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
 }
 
 nav .links .icon span:last-child {
@@ -59,10 +65,10 @@ nav .links ul {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: calc(100% + 22px);
+  top: calc(100% + 20px);
   right: -30px;
   background-image: linear-gradient(#03070a, #041622);
-  min-width: 120px;
+  min-width: 150px;
   display: none;
   z-index: 9999;
   border-radius: 20px;
@@ -76,9 +82,9 @@ nav .links ul::before {
   content: "";
   position: absolute;
   border-style: solid;
-  border-color: transparent transparent var(--min-color-heading) transparent;
+  border-color: transparent transparent #01070a transparent;
   border-width: 10px;
-  right: 40px;
+  right: 30px;
   top: -20px;
 }
 
@@ -90,7 +96,7 @@ nav .links ul li a {
 }
 
 nav .links ul li:hover a {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 nav .links ul li:not(:last-child) {
@@ -108,13 +114,15 @@ nav .links ul li:not(:last-child) {
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 80px;
   color: var(--minColor);
   padding-bottom: 10px;
+  word-spacing: -8px;
+  letter-spacing: -4px;
 }
 @media only screen and (max-width: 767px) {
   .banner h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 .banner p {
@@ -137,6 +145,7 @@ header {
   height: 100vh;
   background-size: cover;
   position: relative;
+  border: 10px solid #041622;
 }
 
 /* start feature */
@@ -181,6 +190,11 @@ header {
   margin-top: 40px;
   gap: 50px;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .services .services-content {
+    gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -313,6 +327,11 @@ header {
   gap: 40px;
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .photos .photos-content {
+    gap: 50px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .photos .photos-content {
@@ -371,16 +390,20 @@ img {
   margin-top: 20px;
   color: #5f5e5e;
 }
+@media (max-width: 767px) {
+  .photos .photos-content .card .info {
+    margin: 20px 0;
+  }
+}
 
 .photos .photos-content .card .info h3 {
-  margin: 10px;
   font-weight: 700;
   color: var(--min-color-heading);
 }
 
 .photos .photos-content .card .info p {
   color: var(--des-color);
-  margin: 0;
+  padding-top: 10px;
 }
 
 /* start contact */
@@ -401,7 +424,12 @@ img {
   font-size: 35px;
   font-weight: bold;
   color: rgb(240, 239, 239);
-  margin-bottom: 20px;
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  .contact .info .lable {
+    font-size: 0.5em;
+  }
 }
 
 .contact .info .link {
@@ -410,6 +438,11 @@ img {
   color: #a7a2a2;
   font-size: 30px;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .contact .info .link {
+    font-size: 20px;
+  }
 }
 
 .contact .info .social {
@@ -457,6 +490,7 @@ img {
     to bottom,
     linear-gradient(#03070a, #041622);
   --min-background-image: linear-gradient(#f08192, #2c38a3);
+  --phon-padding: 30px;
 }
 
 :root {
@@ -472,6 +506,7 @@ img {
     to bottom,
     linear-gradient(#03070a, #041622);
   --min-background-image: linear-gradient(#f08192, #2c38a3);
+  --phon-padding: 30px;
 }
 
 i {
@@ -487,9 +522,13 @@ body {
 }
 
 @media (max-width: 767px) {
-  section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .services,
+  .photos,
+  .contact,
+  .about,
+  .feature {
+    padding-top: var(--phon-padding);
+    padding-bottom: var(--phon-padding);
   }
 }
 .section-heading {
