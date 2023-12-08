@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-website</title>
     <!-- file css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -19,57 +19,57 @@
   </head>
   <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="container">
-          <h2 class="logo">WeClimb</h2>
-          <div class="links">
-            <span class="icon">
-                <span></span>
-                <span></span>
-                <span></span>
+          <h2 class="navbar__logo">WeClimb</h2>
+          <div class="navbar__links-wrapper">
+            <span class="navbar__links-icon">
+                <span class="navbar__links-icon-item"></span>
+                <span class="navbar__links-icon-item"></span>
+                <span class="navbar__links-icon-item"></span>
             </span>
-            <ul>
-              <li>
+            <ul class="navbar__links-globle">
+              <li class="navbar__links-globle-item">
                 <a href="#services">services</a>
               </li>
-              <li>
-                <a href="#about">about </a>
+              <li class="navbar__links-globle-item">
+                <a href="#services">services</a>
               </li>
-              <li>
-                <a href="#contact">contact</a>
+              <li class="navbar__links-globle-item">
+                <a href="#services">services</a>
               </li>
             </ul>
           </div>
           </div>
         </nav>
         <div class="banner">
-            <h1> climb with us</h1>
-            <p>Embark on unforgettable mountain adventures with us.</p>
+            <h1 class="banner__title"> climb with us</h1>
+            <p class="banner__description">Embark on unforgettable mountain adventures with us.</p>
         </div>
     </header>
 
     <!-- start feature -->
     <div class="feature">
       <div class="container">
-        <div class="feat">
-          <i class="fas fa-magic fa-3x"></i>
-          <div class="text">
-            <h3>Expert Guides</h3>
-            <p>Safe climbs with experienced guides.</p>
+        <div class="feature__item">
+          <i class="fa-solid fa-compass"></i>
+          <div class="feature__item-content">
+            <h3 class="feature__item-title">Expert Guides</h3>
+            <p class="feature__item-description">Safe climbs with experienced guides.</p>
           </div>
         </div>
-        <div class="feat">
-          <i class="fas fa-globe fa-3x"></i>
-          <div class="text">
-            <h3>Top-notch Gear</h3>
-            <p>Reliable gear for a comfortable ascent."</p>
+        <div class="feature__item">
+          <i class="fa-solid fa-mountain"></i>
+          <div class="feature__item-content">
+            <h3 class="feature__item-title">Top-notch Gear</h3>
+            <p class="feature__item-description">Reliable gear for a comfortable ascent."</p>
           </div>
         </div>
-        <div class="feat">
-          <i class="fas fa-gem fa-3x"></i>
-          <div class="text">
-            <h3>Scenic Routes</h3>
-            <p>Breathtaking views on every climb</p>
+        <div class="feature__item">
+          <i class="fa-solid fa-person-hiking"></i>
+          <div class="feature__item-content">
+            <h3 class="feature__item-title">Scenic Routes</h3>
+            <p class="feature__item-description">Breathtaking views on every climb</p>
           </div>
         </div>
 
@@ -78,37 +78,37 @@
     <!-- end feature -->
 
     <!-- start services -->
-    <section class="services" id="services">
+    <section class="service" id="services">
       <div class="container">
         <h2 class="section-heading">Services</h2>
         <p>dont be busy productive</p>
-        <div class="services-content">
-            <div class="srv">
-              <i class="fas fa-vector-square fa-2x"></i>
-              <div class="text">
-                <h3>Guided Climbs</h3>
-                <p>Safe mountain navigation with expert guides</p>
+        <div class="service__content">
+            <div class="service__item">
+              <i class="fa-solid fa-map"></i>
+              <div class="service__item-content">
+                <h3 class="service__item-title">Guided Climbs</h3>
+                <p class="service__item-description">Safe mountain navigation with expert guides</p>
               </div>
             </div>
-            <div class="srv">
-              <i class="fas fa-pencil-ruler fa-2x"></i>
-              <div class="text">
-                <h3>Gear Rental</h3>
+            <div class="service__item">
+              <i class="fa-solid fa-dumbbell"></i>
+              <div class="service__item-content">
+                <h3 class="service__item-title">Gear Rental</h3>
                 <p>Rent top-quality gear for a worry-free climb.</p>
               </div>
             </div>
-            <div class="srv">
-              <i class="fab fa-sketch fa-2x"></i>
-              <div class="text">
-                <h3>Training Programs</h3>
-                <p>Boost your climbing skills with tailored programs</p>
+            <div class="service__item">
+              <i class="fa-solid fa-flag"></i>
+              <div class="service__item-content">
+                <h3 class="service__item-title">Training Programs</h3>
+                <p class="service__item-description">Boost your climbing skills with tailored programs</p>
               </div>
             </div>
-            <div class="srv">
-              <i class="fas fa-palette fa-2x"></i>
-              <div class="text">
-                <h3>Tailored Adventure</h3>
-                <p>Craft your personalized mountain adventure</p>
+            <div class="service__item">
+              <i class="fa-solid fa-map"></i>
+              <div class="service__item-content">
+                <h3 class="service__item-title">Tailored Adventure</h3>
+                <p class="service__item-description">Craft your personalized mountain adventure</p>
               </div>
             </div>
         </div>
@@ -121,11 +121,11 @@
       <div class="container">
         <h2 class="section-heading">About</h2>
         <p>Certainly! Here are two paragraphs to include an</p>
-        <div class="about-content">
-          <div class="image">
+        <div class="about__content">
+          <div class="about__item-image">
             <img src="images/about.jpg">
           </div>
-          <div class="text">
+          <div class="about__item-description">
             <p>Welcome to WeClimb, where adventure meets altitude. We're a team of passionate climbers dedicated to making mountain experiences accessible to all. Our mission is simple: provide expert guidance, reliable gear, and foster a community bound by a love for the great outdoors. Join us, and let's ascend together into the extraordinary world of mountain exploration.</p>
         </div>
       </div>
@@ -137,26 +137,26 @@
       <div class="container">
         <h2 class="section-heading">photos</h2>
           <p>Capture the Climb</p>
-          <div class="photos-content">
-            <div class="card">
+          <div class="photos__content">
+            <div class="photos__card">
               <img src="images/card2.jpeg">
-              <div class="info">
-                <h3>Peak Perspectives</h3>
-                <p>Capture the essence of WeClimb's triumphs and breathtaking vistas.</p>
+              <div class="photos__card-content">
+                <h3 class="photos__card-title">Peak Perspectives</h3>
+                <p class="photos__card-description">Capture the essence of WeClimb's triumphs and breathtaking vistas.</p>
               </div>
             </div>
-            <div class="card">
-              <img src="images/mountain2.jpg" class="tow">
-              <div class="info">
-                <h3>Summit Snapshot</h3>
-                <p>Explore shared joy and memorable moments in our visual journey.</p>
+            <div class="photos__card">
+              <img src="images/mountain2.jpg" class="photos__card-scale">
+              <div class="photos__card-content">
+                <h3 class="photos__card-title">Summit Snapshot</h3>
+                <p class="photos__card-description">Explore shared joy and memorable moments in our visual journey.</p>
               </div>
             </div>
-            <div class="card">
+            <div class="photos__card">
               <img src="images/mountain3.jpg">
-              <div class="info">
-                <h3>Climb Chronicles</h3>
-                <p>mmerse yourself in the stories told through our climb snapshots.</p>
+              <div class="photos__card-content">
+                <h3 class="photos__card-title">Climb Chronicles</h3>
+                <p class="photos__card-description">mmerse yourself in the stories told through our climb snapshots.</p>
               </div>
             </div>
           </div>
@@ -168,11 +168,11 @@
   <div class="container">
     <h2 class="section-heading" id="contact">contact</h2>
       <p>we are born creat</p>
-      <div class="info">
-        <p class="lable">feel free to drop us a line at:</p>
-        <a href="mailto:sabryalshybany1@gmail.com" class="link"
+      <div class="contact__content">
+        <p class="contact__lable">feel free to drop us a line at:</p>
+        <a href="mailto:sabryalshybany1@gmail.com" class="contact__link"
         >sabryalshybany1@gmail.com</a>
-        <div class="social">
+        <div class="contact__social">
           find us social networks
         <a href="https://www.youtube.com/@SabriAlshibani"><i class="fab fa-youtube"></i></a>
          <a href="https://twitter.com/SbryAlshybany"> <i class="fab fa-twitter"></i></a>
@@ -184,7 +184,7 @@
 </section>
   <!-- end contact -->
   <!-- start footer -->
-  <footer class="footer">&copy;2023 <span>Sabri</span> all right resereverd</div>
+  <footer class="footer">&copy;2023 <span>Sabri</span> all right resereverd</footer>
 <!-- end footer -->
 
     <!-- 

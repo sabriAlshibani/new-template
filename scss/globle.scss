@@ -3,13 +3,14 @@ i {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  font-size: 40px;
 }
 body {
   font-family: "Work Sans", sans-serif;
   background-image: linear-gradient(#03070a, #041622);
 }
 @media (max-width: 767px) {
-  .services,
+  .service,
   .photos,
   .contact,
   .about,

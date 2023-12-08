@@ -1,25 +1,25 @@
 /* start feature */
 .feature {
-    padding-top: var(--minPadding);
-    padding-bottom: var(--minPadding);
-  }
-  .feature .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
-  }
-  .feature .feat {
+  padding-top: var(--minPadding);
+  padding-bottom: var(--minPadding);
+  &__item {
     padding: 20px;
     text-align: center;
+    &-title {
+        font-size: 20px;
+        font-weight: 800;
+        margin: 20px 0;
+        color: var(--min-color-heading);
+      }
+      &-description {
+        color: #f0f0f0;
+        font-size: 16px;
+        font-weight: 400;
+    }
   }
-  .feature .feat .text h3 {
-    font-size: 20px;
-    font-weight: 800;
-    margin: 20px 0;
-    color: var(--min-color-heading);
-  }
-  .feature .feat .text p {
-    color: #f0f0f0;
-    font-size: 16px;
-    font-weight: 400;
-  }
+}
+.feature .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
