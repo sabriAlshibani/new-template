@@ -8,9 +8,9 @@
   &__logo {
     font-weight: 800;
     color: var(--minColor);
-    text-transform: uppercase;
-    &::first-letter {
-      color: #041622;
+    text-transform: capitalize;
+    & span {
+      color: #C35ECD;
     }
   }
   &__links {
@@ -54,7 +54,7 @@
           text-decoration: none;
           color: #eef3f7;
           &:hover {
-            padding-left: 25px;
+            transform: translateX(42px);
           }
         }
       }

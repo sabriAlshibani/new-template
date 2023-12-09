@@ -3,8 +3,15 @@
   padding-top: var(--minPadding);
   padding-bottom: var(--minPadding);
   &__item {
-    padding: 20px;
+    & .fa-solid {
+      font-size: 60px;
+    }
+    padding: 0 20px;
     text-align: center;
+    @media (max-width:767px) {
+      padding: 20px;
+
+    }
     &-title {
         font-size: 20px;
         font-weight: 800;

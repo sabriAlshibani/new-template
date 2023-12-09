@@ -9,10 +9,10 @@
 .navbar__logo {
   font-weight: 800;
   color: var(--minColor);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
-.navbar__logo::first-letter {
-  color: #041622;
+.navbar__logo span {
+  color: #C35ECD;
 }
 .navbar__links-wrapper {
   position: relative;
@@ -56,7 +56,7 @@
   color: #eef3f7;
 }
 .navbar__links-globle-item a:hover {
-  padding-left: 25px;
+  transform: translateX(42px);
 }
 .navbar__links-icon {
   width: 30px;
@@ -90,7 +90,7 @@
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 70px;
   color: var(--minColor);
   padding-bottom: 10px;
 }
@@ -127,8 +127,16 @@ header {
   padding-bottom: var(--minPadding);
 }
 .feature__item {
-  padding: 20px;
+  padding: 0 20px;
   text-align: center;
+}
+.feature__item .fa-solid {
+  font-size: 60px;
+}
+@media (max-width: 767px) {
+  .feature__item {
+    padding: 20px;
+  }
 }
 .feature__item-title {
   font-size: 20px;
