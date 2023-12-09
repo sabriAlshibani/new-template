@@ -10,7 +10,7 @@
     color: var(--minColor);
     text-transform: capitalize;
     & span {
-      color: #C35ECD;
+      color: #c35ecd;
     }
   }
   &__links {
@@ -19,11 +19,11 @@
       &:hover .navbar__links-icon-item {
         width: 100%;
       }
-      &:hover .navbar__links-globle {
+      &:hover .navbar__links-list {
         display: block;
       }
     }
-    &-globle {
+    &-list {
       display: none;
       list-style: none;
       position: absolute;
